@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ryan Goosen</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-[#0a192f] text-white font-sans">
+
+    <!-- Navbar -->
+    <nav
+      class="fixed top-0 left-0 w-full flex items-center justify-between md:justify-center px-4 sm:px-8 py-4 bg-[#002607]/90 backdrop-blur-md z-50 border-b border-white/30"
+    >
+      <!-- Mobile Logo -->
+      <a href="#intro" class="md:hidden text-xl font-bold hover:text-green-400 transition">RG</a>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex items-center justify-center gap-6 lg:gap-12">
+        <a href="#projects" class="hover:text-green-400 transition">Projects</a>
+        <a href="#contact" class="hover:text-green-400 transition">Contact</a>
+        <a href="#intro" class="text-2xl hover:text-green-400 font-bold transition">Home</a>
+        <a href="https://www.linkedin.com/in/ryan-goosen/" class="flex items-center gap-2 hover:text-cyan-400 text-cyan-600 transition">
+          LinkedIn
+          <img src="images/linkedin-logo.svg" class="h-5 w-5" alt="LinkedIn" />
+        </a>
+        <a href="https://gitlab.com/ryan-pietersen" class="flex items-center gap-2 hover:text-blue-400 text-cyan-600 transition">
+          Gitlab
+          <img src="images/gitlab.png" class="h-5 w-5" alt="Gitlab" />
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button
+        id="mobile-menu-btn"
+        class="md:hidden flex flex-col gap-1.5 p-2"
+        aria-label="Toggle menu"
+      >
+        <span class="w-6 h-0.5 bg-white transition-transform origin-center"></span>
+        <span class="w-6 h-0.5 bg-white transition-opacity"></span>
+        <span class="w-6 h-0.5 bg-white transition-transform origin-center"></span>
+      </button>
+
+      <!-- Mobile Menu Overlay -->
+      <div
+        id="mobile-menu"
+        class="fixed inset-0 top-[60px] bg-[#002607]/95 backdrop-blur-lg transform translate-x-full transition-transform duration-300 md:hidden flex flex-col items-center justify-start pt-12 gap-8 z-40"
+      >
+        <a href="#projects" class="text-xl hover:text-green-400 transition mobile-menu-link">Projects</a>
+        <a href="#contact" class="text-xl hover:text-green-400 transition mobile-menu-link">Contact</a>
+        <a href="#intro" class="text-xl hover:text-green-400 transition mobile-menu-link">Home</a>
+        <a href="https://www.linkedin.com/in/ryan-goosen/" class="flex items-center gap-2 text-xl hover:text-cyan-400 transition">
+          LinkedIn
+          <img src="images/linkedin-logo.svg" class="h-5 w-5" alt="LinkedIn" />
+        </a>
+        <a href="https://codeberg.org/Ryan-Goosen" class="flex items-center gap-2 text-xl hover:text-blue-400 transition">
+          Codeberg
+          <img src="images/codeberg-logo.png" class="h-5 w-5" alt="Codeberg" />
+        </a>
+      </div>
+    </nav>
+
+
+    <!-- Intro Section -->
+    <section id="intro" class="relative min-h-screen flex flex-col justify-center items-center text-center pt-20 overflow-hidden bg-[#002607]">
+      <img
+          src="images/main-background.webp"
+          alt=""
+          loading="lazy"
+          class="absolute inset-0 w-full h-full object-cover z-0"
+        /> 
+      <h1 class="text-3xl sm:text-5xl md:text-6xl font-bold mb-4 relative z-10 px-4" style="transform: translateZ(0); will-change: transform;">
+        Hi, I'm <span class="text-5xl sm:text-6xl md:text-7xl font-bold text-[#00cb25] text-center block sm:inline" style="font-family: 'Times New Roman', serif; text-shadow: 0 2px 4px rgba(0,0,0,0.4);">Ryan Goosen</span>
+      </h1>
+      <p class="text-base sm:text-lg md:text-xl max-w-xl text-gray-200 px-4" style="text-shadow: 0 1px 3px rgba(0,0,0,0.5); transform: translateZ(0);">
+        I'm a full-stack developer with a focus on creating seamless user
+        experiences. I enjoy exploring new technologies and finding creative
+        solutions to challenging problems.
+      </p>
+      <a
+        href="#projects"
+        class="mt-8 px-6 py-3 bg-[#002607] hover:bg-[#00cb25] text-[#ffffff] font-semibold rounded-xl transition shadow-none hover:shadow-[0_0_10px_white] relative z-10"
+        >
+        View My Work
+      </a>
+    </section>
+
+    <!-- Projects Section -->
+    <section
+      id="projects"
+      class="relative min-h-screen flex flex-col justify-center items-center bg-[#00682e] px-6 py-16"
+    >
+        <img
+    src="images/projects-background.webp"
+    alt=""
+    loading="lazy"
+    class="absolute inset-0 w-full h-full object-cover z-0"
+  />
+      <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-12 sm:mb-20 text-green-300 relative z-10 text-center">PROJECTS</h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 sm:gap-6 lg:gap-8 relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Project Card 1 -->
+        <div class="group flex flex-col bg-[#002607] rounded-2xl shadow-[10px_12px_25px_rgba(255,255,255,0.35)] hover:scale-105 transition-transform duration-300 overflow-hidden">
+          <!-- Header -->
+          <div class="bg-[#004d1a] p-4">
+            <h3 class="text-xl sm:text-2xl font-semibold flex justify-center items-center gap-2 text-green-300">
+              Movie Time
+              <img src="images/movies-icon.png" class="h-5 w-5" alt="" />
+            </h3>
+          </div>
+          <!-- Image -->
+          <div class="relative aspect-video overflow-hidden">
+            <img src="images/movieTime-image.webp" alt="" loading="lazy" class="w-full h-full object-cover" />
+          </div>
+          <!-- Footer -->
+          <div class="p-4 flex-1 flex flex-col">
+            <p class="text-gray-300 text-sm leading-relaxed">
+              A user-friendly website designed to help you explore, discover, and search
+              for a wide variety of movies, while also allowing you to save and manage a
+              personalized list of your favorite films for easy access later.
+            </p>
+            <div class="flex flex-wrap gap-4 mt-auto pt-4">
+              <a href="https://movie-app-blush-xi.vercel.app/" class="text-green-400 hover:text-cyan-300 underline transition text-sm">View Project</a>
+              <a href="https://gitlab.com/vercel-projects/movie-app" class="text-green-400 hover:text-cyan-300 underline transition text-sm">View Source Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="group flex flex-col bg-[#002607] rounded-2xl shadow-[10px_12px_25px_rgba(255,255,255,0.35)] hover:scale-105 transition-transform duration-300 overflow-hidden">
+          <div class="bg-[#004d1a] p-4">
+            <h3 class="text-xl sm:text-2xl font-semibold flex justify-center items-center gap-2 text-green-300">
+              QUIZ ME
+              <img src="images/question-sign.png" class="h-5 w-5" alt="" />
+            </h3>
+          </div>
+          <div class="relative aspect-video overflow-hidden">
+            <img src="images/quizMe-image.webp" alt="" loading="lazy" class="w-full h-full object-cover" />
+          </div>
+          <div class="p-4 flex-1 flex flex-col">
+            <p class="text-gray-300 text-sm leading-relaxed">
+              A command-line quiz game that tracks your score in real-time and saves your performance history to a file. You can view past attempts and stats like your high score.
+            </p>
+            <div class="flex flex-wrap gap-4 mt-auto pt-4">
+              <a href="https://codeberg.org/Ryan-Goosen/quizMe" class="text-green-400 hover:text-cyan-300 underline transition text-sm">View Source Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="group flex flex-col bg-[#002607] rounded-2xl shadow-[10px_12px_25px_rgba(255,255,255,0.35)] hover:scale-105 transition-transform duration-300 overflow-hidden">
+          <div class="bg-[#004d1a] p-4">
+            <h3 class="text-xl sm:text-2xl font-semibold flex justify-center items-center gap-2 text-green-300">
+              Run On Anything
+              <img src="images/run.png" class="h-5 w-5" alt="" />
+            </h3>
+          </div>
+          <div class="relative aspect-video overflow-hidden">
+            <img src="images/runOnAnything-background.webp" alt="" loading="lazy" class="w-full h-full object-cover" />
+          </div>
+          <div class="p-4 flex-1 flex flex-col">
+            <p class="text-gray-300 text-sm leading-relaxed">
+              A Python library that lets you run your Python project on any machine with Python installed.
+            </p>
+            <div class="flex flex-wrap gap-4 mt-auto pt-4">
+              <a href="https://codeberg.org/Ryan-Goosen/runOnAnything" class="text-green-400 hover:text-cyan-300 underline transition text-sm">View Source Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 4 -->
+        <div class="group flex flex-col bg-[#002607] rounded-2xl shadow-[10px_12px_25px_rgba(255,255,255,0.35)] hover:scale-105 transition-transform duration-300 overflow-hidden">
+          <div class="bg-[#004d1a] p-4">
+            <h3 class="text-xl sm:text-2xl font-semibold flex justify-center items-center gap-2 text-green-300">
+              Pomodora Clock
+              <img src="images/clock.png" class="h-5 w-5" alt="" />
+            </h3>
+          </div>
+          <div class="relative aspect-video overflow-hidden">
+            <img src="images/pomodoraClock-background.webp" alt="" loading="lazy" class="w-full h-full object-cover" />
+          </div>
+          <div class="p-4 flex-1 flex flex-col">
+            <p class="text-gray-300 text-sm leading-relaxed">
+              A pomodora clock built in python. The clock is customizable to the users specifications.
+            </p>
+            <div class="flex flex-wrap gap-4 mt-auto pt-4">
+              <a href="https://codeberg.org/Ryan-Goosen/pomodoraClock" class="text-green-400 hover:text-cyan-300 underline transition text-sm">View Source Code</a>
+              <a href="https://codeberg.org/Ryan-Goosen/pomodoraClock/raw/branch/main/executable/pomodoraClock" class="text-green-400 hover:text-cyan-300 underline transition text-sm">Download (Linux)</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="relative py-20 sm:py-24 bg-[#002607] px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-green-300">Get In Touch</h2>
+        <p class="text-base sm:text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
+          I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+          <a href="mailto:ryangoosen7@gmail.com" class="px-6 py-3 bg-[#00cb25] hover:bg-[#00a81e] text-white font-semibold rounded-xl transition shadow-lg hover:shadow-[0_0_20px_rgba(0,203,37,0.5)]">
+            Send Email
+          </a>
+          <a href="https://www.linkedin.com/in/ryan-goosen/" class="px-6 py-3 border-2 border-[#00cb25] hover:bg-[#00cb25] text-white font-semibold rounded-xl transition">
+            Connect on LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 bg-[#001a0d] text-center text-gray-400 text-sm px-4">
+      <p>© 2025 Ryan Goosen. All rights reserved.</p>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+      let isMenuOpen = false;
+
+      function toggleMenu() {
+        isMenuOpen = !isMenuOpen;
+        if (isMenuOpen) {
+          mobileMenu.classList.remove('translate-x-full');
+          mobileMenuBtn.children[0].classList.add('rotate-45', 'translate-y-2');
+          mobileMenuBtn.children[1].classList.add('opacity-0');
+          mobileMenuBtn.children[2].classList.add('-rotate-45', '-translate-y-2');
+        } else {
+          mobileMenu.classList.add('translate-x-full');
+          mobileMenuBtn.children[0].classList.remove('rotate-45', 'translate-y-2');
+          mobileMenuBtn.children[1].classList.remove('opacity-0');
+          mobileMenuBtn.children[2].classList.remove('-rotate-45', '-translate-y-2');
+        }
+      }
+
+      mobileMenuBtn.addEventListener('click', toggleMenu);
+      mobileMenuLinks.forEach(link => link.addEventListener('click', toggleMenu));
+    </script>
+  </body>
+<!-- Attributions  -->
+<!-- Photo by Madison Inouye: https://www.pexels.com/photo/photo-of-two-fern-leaves-1216345/ -->
+<!-- <a href="https://www.flaticon.com/free-icons/question" title="question icons">Question icons created by Dave Gandy - Flaticon</a> -->
+<!-- <a href="https://www.flaticon.com/free-icons/movie" title="movie icons">Movie icons created by Freepik - Flaticon</a> -->
+<!-- <a href="https://www.flaticon.com/free-icons/clock" title="clock icons">Clock icons created by Those Icons - Flaticon</a> -->
+<!-- <a href="https://www.flaticon.com/free-icons/gitlab" title="gitlab icons">Gitlab icons created by Freepik - Flaticon</a> ---> 
+<!-- https://www.freeconvert.com/image-con:verter -->
+</html>
